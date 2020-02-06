@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>era pra ser uma Calculadora</title>
+    <style>
+    </style>
+</head>
+<script type="text/javascript">
+    function mult(){
+        var v1 = document.getElementById("n1").value;
+        var v2 = document.getElementById("n2").value;
+        var v3 = v1*v2;
+        alert(v3);
+    }
+    function soma(){
+        var v1 = document.getElementById("n1").value;
+        var v2 = document.getElementById("n2").value;
+        var v3 = parseInt(v1) + parseInt(v2);
+        alert(v3);
+    }
+    function div(){
+        var v1 = document.getElementById("n1").value;
+        var v2 = document.getElementById("n2").value;
+        var v3 = v1/v2;
+        alert(v3);
+    }
+    function sub(){
+        var v1 = document.getElementById("n1").value;
+        var v2 = document.getElementById("n2").value;
+        var v3 = v1-v2;
+        alert(v3);
+    }
+</script>
+<body style="background-color:darkgrey; font-family: Tahoma;">
+
+<div class="card">
+    <h1>Primeiro Valor:</h1><br>
+<input id="n1" type="text"/><br>
+    <h1 >Segundo Valor</h1><br>
+<input id="n2" type="text"/><br>
+        <br><br>
+
+<button style="background-color: indigo; font-size:medium;" id="bt" 
+    onclick="mult()">Multiplicar</button><br><br>
+
+<button style="background-color: darkred;font-size:medium;"id="bt" 
+    onclick="soma()">Somar</button><br><br>
+
+<button style="background-color: green;font-size:medium;"id="bt" 
+    onclick="div()">Dividir</button><br><br>
+
+<button style="background-color: darkblue;font-size:medium;"id="bt" 
+    onclick="sub()">Subtrair</button>
+
+</div>
+
+</body>
+</html>
